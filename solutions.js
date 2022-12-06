@@ -19,3 +19,33 @@
  * isFactor
  */
 
+function add(a,b){
+    if (isNaN(parseFloat(a) + parseFloat(b))){
+        return false
+    }
+    return parseFloat(a) + parseFloat(b)
+}
+console.log(add(3.3,4));
+
+function calcCube(a){
+    if (typeof a === `number`){
+        return a ** a
+    }
+        return 0
+}
+
+function isTypeMatch(a,b){
+    return typeof a === b
+}
+
+function isFactor(a,b){
+    if (a === true){
+        return false
+    }
+    if (b % a === 0){
+        return true
+    }
+    else{
+        return false
+    }
+}
