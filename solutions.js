@@ -102,9 +102,17 @@ function calcCube(a){
     return a ** 3
 }
 
-function isTypeMatch(a,b){
-    return typeof a === b
+//p08
+//Define a function named isTypeMatch that accepts two arguments and returns true if the types of the arguments match. It should return false if either arguments is null.
+
+function isTypeMatch(a, b) {
+    if (typeof a === typeof b){
+        return true
+    }
+    return false
 }
+
+//p09
 
 function isFactor(a,b){
     if (a === true){
