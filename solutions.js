@@ -113,6 +113,29 @@ function isTypeMatch(a, b) {
 }
 
 //p09
+//Define a function named findLongestString that accepts two string arguments and returns the string with the greatest length. If only one argument is a string, return that argument. If neither arguments are strings, return and empty string.
+
+function findLongestString(a,b){
+    if ((typeof a !== `string`) && (typeof b !== `string`)){
+        return ``
+    }
+    if (a.length > b.length){
+        return a
+    }
+    if (a.length < b.length){
+        return b
+    }
+    if ((typeof a === `string`) && (typeof b !== `string`)){
+        return a
+    }
+    if ((typeof a !== `string`) && (typeof b === `string`)){
+        return b
+    }
+
+    return ``
+}
+
+console.log(findLongestString(null,27));
 
 function isFactor(a,b){
     if (a === true){
