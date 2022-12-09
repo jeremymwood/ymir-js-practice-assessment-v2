@@ -32,22 +32,74 @@ function isGreaterThan(a,b){
      return false
 }
 
+//p02
+// Define a function named isLessThan that takes in two values and returns a true if the first argument is less than the second argument otherwise it should return false. If either argument is not a number, return false;
 
-
-function add(a,b){
-    if (isNaN(parseFloat(a) + parseFloat(b))){
+function isLessThan(a,b){
+    if (isNaN(a) || isNaN(b) === true){
         return false
     }
-    return parseFloat(a) + parseFloat(b)
+    if (parseFloat(a) < parseFloat(b) === true){
+        return true
+    }
+    return false
 }
 
-    console.log(add(3.3,4));
+
+//p03
+// Define a function named isEqualNumber that takes in two values and returns a true if the first argument is equal to the second argument, otherwise it should return false. If either argument is not a number return false;
+
+function isEqualNumber(a,b){
+    if (isNaN(a) || isNaN(b) === true){
+        return false
+    }
+    if (parseFloat(a) === parseFloat(b)){
+        return true
+    }
+    return false
+}
+
+//p04
+// Define a function named isEqual that takes in two values and returns a true if the first argument has the same value and type as the second argument, otherwise it should return false.
+
+function isEqual(a,b){
+    if (a === b){
+        return true
+    }
+    return false
+}
+
+//p05
+// Define a function named isNot that accepts a boolean argument and returns the opposite value of the argument. It should return false if the argument is null or not a boolean.
+
+function isNot(bool){
+    if(bool === false){
+        return true
+    }
+    return false
+}
+
+//p06
+// Define a function named calcAbs that accepts a number argument and returns the absolute value of the argument. It should return O (zero) if the arguments is null or not a number.
+
+function calcAbs(a){
+    if (a < 0){
+        return a * -1;
+    }
+    if (a > 0){
+        return a;
+    }
+    return 0
+}
+
+//p07
+// Define a function named calcCube that accepts a number argument and returns the cubed value of the argument. It should return O (zero) if the arguments is null or not a number.
 
 function calcCube(a){
-    if (typeof a === `number`){
-        return a ** a
-    }
+    if (isNaN(a) === true){
         return 0
+    }
+    return a ** 3
 }
 
 function isTypeMatch(a,b){
