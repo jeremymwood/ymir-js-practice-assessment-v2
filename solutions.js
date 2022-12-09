@@ -135,16 +135,15 @@ function findLongestString(a,b){
     return ``
 }
 
-console.log(findLongestString(null,27));
+//p10
+// Define a function named isFactor that accepts two number arguments and returns true if the first argument is a factor of the second argument. It should return false if either argument is null or not a number. Also return false if the first argument is 0 (zero).
 
 function isFactor(a,b){
-    if (a === true){
+    if (typeof a !== `number`){
         return false
     }
     if (b % a === 0){
         return true
     }
-    else{
-        return false
-    }
+    return false
 }
